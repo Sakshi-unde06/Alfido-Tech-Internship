@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Cloud Internship Task 1</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(-45deg, #0f2027, #203a43, #2c5364, #1e3c72);
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+    color: white;
+    text-align: center;
+}
+
+/* Background Animation */
+@keyframes gradientBG {
+    0% { background-position: 0% }
+    50% { background-position: 100% }
+    100% { background-position: 0% }
+}
+
+header {
+    padding: 60px 20px;
+    animation: fadeIn 2s ease-in;
+}
+
+h1 {
+    font-size: 40px;
+    color: #00e5ff;
+}
+
+.container {
+    padding: 30px;
+}
+
+/* Card Animation */
+.card {
+    background: rgba(255,255,255,0.1);
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 500px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 15px rgba(0,0,0,0.4);
+    transform: translateY(50px);
+    opacity: 0;
+    animation: slideUp 1s forwards;
+}
+
+.card:nth-child(1) { animation-delay: 0.3s; }
+.card:nth-child(2) { animation-delay: 0.6s; }
+.card:nth-child(3) { animation-delay: 0.9s; }
+.card:nth-child(4) { animation-delay: 1.2s; }
+.card:nth-child(5) { animation-delay: 1.5s; }
+
+@keyframes slideUp {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.highlight {
+    color: #00ffcc;
+    font-weight: bold;
+}
+
+/* Button Animation */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #00e5ff;
+    color: black;
+    border-radius: 25px;
+    text-decoration: none;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #00ffcc;
+    transform: scale(1.1);
+}
+
+footer {
+    margin-top: 40px;
+    padding: 20px;
+    font-size: 14px;
+    opacity: 0.7;
+    animation: fadeIn 3s ease-in;
+}
+
+/* Fade Animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>☁️ Cloud Computing Internship</h1>
+    <p>AlfidoTech | Task 1 Submission</p>
+</header>
+
+<div class="container">
+
+    <div class="card">
+        <h2>👤 Student Details</h2>
+        <p><span class="highlight">Name:</span> Sakshi Unde</p>
+        <p><span class="highlight">Role:</span> Cloud Computing Intern</p>
+    </div>
+
+    <div class="card">
+        <h2>📌 Task 1</h2>
+        <p>Static Website Hosting using AWS S3</p>
+    </div>
+
+    <div class="card">
+        <h2>⚙️ Technologies</h2>
+        <p>AWS S3, HTML, CSS</p>
+    </div>
+
+    <div class="card">
+        <h2>🎯 Objective</h2>
+        <p>Host a static website and make it publicly accessible</p>
+    </div>
+
+    <div class="card">
+        <h2>✅ Status</h2>
+        <p style="color:#00ffcc;">Successfully Completed 🚀</p>
+    </div>
+
+    <div class="card">
+        <h2>🌐 Live Project</h2>
+        <a href="http://alfido-tech.s3-website.ap-south-1.amazonaws.com" class="btn">View Website</a>
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2026 Your Name | AlfidoTech Internship</p>
+</footer>
+
+</body>
+</html>
