@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Cloud VM Project</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+/* Animated Gradient Background */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(-45deg, #0f2027, #203a43, #2c5364, #1e3c72);
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+    color: white;
+    text-align: center;
+}
+
+/* Background Animation */
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Header */
+header {
+    padding: 60px 20px;
+    animation: fadeIn 2s ease-in;
+}
+
+h1 {
+    font-size: 42px;
+    color: #00e5ff;
+    text-shadow: 0 0 10px #00e5ff, 0 0 20px #00e5ff;
+}
+
+/* Container */
+.container {
+    padding: 30px;
+}
+
+/* Cards */
+.card {
+    background: rgba(255,255,255,0.1);
+    margin: 20px auto;
+    padding: 25px;
+    border-radius: 15px;
+    max-width: 500px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    transform: translateY(40px);
+    opacity: 0;
+    animation: slideUp 1s forwards;
+}
+
+.card:nth-child(1){animation-delay:0.3s;}
+.card:nth-child(2){animation-delay:0.6s;}
+.card:nth-child(3){animation-delay:0.9s;}
+.card:nth-child(4){animation-delay:1.2s;}
+.card:nth-child(5){animation-delay:1.5s;}
+.card:nth-child(6){animation-delay:1.8s;}
+
+@keyframes slideUp {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background: #00e5ff;
+    color: black;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #00ffcc;
+    transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+    margin-top: 40px;
+    padding: 20px;
+    opacity: 0.7;
+    animation: fadeIn 3s ease-in;
+}
+
+/* Fade Animation */
+@keyframes fadeIn {
+    from {opacity:0;}
+    to {opacity:1;}
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>☁️ Hello from Cloud VM</h1>
+    <p>Cloud Computing Internship - Task 2</p>
+</header>
+
+<div class="container">
+
+    <div class="card">
+        <h2>👤 Student</h2>
+        <p>Name: SAKSHI UNDE</p>
+        <p>Role: Cloud Computing Intern</p>
+    </div>
+
+    <div class="card">
+        <h2>📌 Task</h2>
+        <p>Launch EC2 VM & Configure Web Server</p>
+    </div>
+
+    <div class="card">
+        <h2>⚙️ Technologies</h2>
+        <p>AWS EC2, Ubuntu, Apache</p>
+    </div>
+
+    <div class="card">
+        <h2>🎯 Objective</h2>
+        <p>Deploy a web server and host a custom webpage on cloud VM</p>
+    </div>
+
+    <div class="card">
+        <h2>🔗 Links</h2>
+        <a href="#" class="btn">GitHub</a>
+        <a href="#" class="btn">LinkedIn</a>
+    </div>
+
+    <div class="card">
+        <h2>✅ Status</h2>
+        <p style="color:#00ffcc;">Website Running Successfully 🚀</p>
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2026 Cloud VM Project</p>
+</footer>
+
+</body>
+</html>
