@@ -1,0 +1,18 @@
+# Update package list
+sudo apt update
+# Upgrade installed packages
+sudo apt upgrade -y
+# Install Apache web server
+sudo apt install apache2 -y
+# Start Apache service
+sudo systemctl start apache2
+# Enable Apache on boot
+sudo systemctl enable apache2
+# Check Apache status
+sudo systemctl status apache2
+# Go to web root directory
+cd /var/www/html
+# Edit HTML file
+sudo nano index.html
+# Restart Apache server
+sudo systemctl restart apache2
